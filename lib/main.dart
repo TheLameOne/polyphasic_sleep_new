@@ -7,6 +7,8 @@ import 'package:polyphasic_sleep_new/pages/how_it_works_page.dart';
 import 'package:polyphasic_sleep_new/pages/settings_page.dart';
 import 'package:polyphasic_sleep_new/pages/sleep_quality_page.dart';
 import 'package:polyphasic_sleep_new/pages/sounds_page.dart';
+import 'package:polyphasic_sleep_new/pages/splash_screen/logo_page.dart';
+import 'package:polyphasic_sleep_new/pages/splash_screen/quote_page.dart';
 import 'package:polyphasic_sleep_new/theme/dark_mode.dart';
 import 'package:polyphasic_sleep_new/theme/light_mode.dart';
 import 'package:polyphasic_sleep_new/theme/theme_provider.dart';
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Polyphasic Sleep',
-      home: HomePage(),
+      home: LogoPage(),
       theme: Provider.of<ThemeProvider>(context).themeData,
       routes: {
         '/homepage': (context) => HomePage(),
@@ -38,6 +40,8 @@ class MyApp extends StatelessWidget {
         '/soundspage': (context) => SoundsPage(),
         '/sleepqualitypage': (context) => SleepQualityPage(),
         '/settingspage': (context) => SettingsPage(),
+        '/logopage': (context) => LogoPage(),
+        '/quotepage': (context) => QuotePage(),
       },
     );
   }

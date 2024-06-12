@@ -1,0 +1,190 @@
+[
+  {
+    "schedule_name": "biphasic",
+    "link": "https://www.polyphasic.net/biphasic-2/",
+    "types": [
+      {
+        "schedule_type": "Segmented",
+        "duration": "420",
+        "classification": "Biphasic schedule in a Dual Core style",
+        "specification": "2 core sleeps, with a short gap between them.",
+        "mechanism": "Two sleeps per day, with one sleep in the first half of the night that gives mostly SWS. In addition, another sleep in the second half of the night gives mostly REM. There is usually a 3-hour wake between 2 cores to trigger sleep stage division within them.",
+        "adaptation_difficulty": "Moderate",
+        "ideal_scheduling": "1 core around 21:00, should not be later than 22:00ish, 1 core till morning.",
+        "link": "https://www.polyphasic.net/schedules/segmented-sleep"
+      },
+      {
+        "schedule_type": "Siesta",
+        "duration": "390",
+        "classification": "Biphasic schedule",
+        "specification": "1 long core + 1 short core, placed roughly opposite each other.",
+        "mechanism": "Two sleeps per day. The core occupies most of the night. In addition, there is a long sleep block around noon",
+        "adaptation_difficulty": "Moderate",
+        "ideal_scheduling": "Core around midnight, siesta at noon.",
+        "link": "https://www.polyphasic.net/schedules/siesta"
+      },
+      {
+        "schedule_type": "Biphasic-X",
+        "duration": "420,540",
+        "classification": "Flexible, Biphasic, Non-reducing Polyphasic Sleep",
+        "specification": "1 long core sleep, naps with varying lengths or consistent length depending on days. The nap contains primarily NREM1/NREM2 with short duration (< ~25-30m) and SWS/REM with longer duration (> 60m).",
+        "mechanism": "1 core sleep, 1 nap as main form. More than 1 core sleep or 1 nap (reduce total sleep) is permissible on busier days. However, one should recover afterwards to recover from sleep deprivation. They can increase total sleep by extending either core length or nap length in Biphasic form to keep up napping habits. Both core sleep and nap(s) are flexible; they can move around to a degree to preserve the circadian rhythm.",
+        "adaptation_difficulty": "Easy",
+        "ideal_scheduling": "Consistent dark period everyday, core sleep starts 1-2 hours after dark period. Nap during daytime, no later than 6 PM.",
+        "link": "https://www.polyphasic.net/non-reducing-polyphasic-schedules/#biphasic-x"
+      }
+    ]
+  },
+  {
+    "schedule_name": "everyman",
+    "link": "https://www.polyphasic.net/everyman-6/",
+    "types": [
+      {
+        "schedule_type": "Everyman 1",
+        "duration": "380",
+        "classification": "Biphasic schedule",
+        "specification": "1 long core sleep, 1 REM nap",
+        "mechanism": "1 core sleep (4 full cycles), 1 nap",
+        "adaptation_difficulty": "Moderate",
+        "ideal_scheduling": "Core close to midnight, early-afternoon nap",
+        "link": "https://www.polyphasic.net/schedules/everyman-1"
+      },
+      {
+        "schedule_type": "Everyman 2",
+        "duration": "310",
+        "classification": "Everyman schedule",
+        "specification": "1 long core sleep, 2 REM naps",
+        "mechanism": "1 core sleep (3 full cycles), 2 naps",
+        "adaptation_difficulty": "Moderate",
+        "ideal_scheduling": "Core close to midnight, nap before work, early-afternoon nap. However, the second nap may contain only light sleep in some cases.",
+        "link": "https://www.polyphasic.net/schedules/everyman-2"
+      },
+      {
+        "schedule_type": "Everyman 3",
+        "duration": "240",
+        "classification": "Everyman schedule",
+        "specification": "1 core, 3 naps",
+        "mechanism": "1 main sleep (2 full cycles), 3 REM naps",
+        "adaptation_difficulty": "Hard",
+        "ideal_scheduling": "Core starts as close to dusk as possible (around 21:00) to gain more SWS. One nap is around 04:00, one nap post-dawn and one early-afternoon nap. All naps should contain REM and little light sleep only. However, the last nap may contain predominantly light sleep on extended version, or in people with low REM requirement",
+        "link": "https://www.polyphasic.net/schedules/everyman-3"
+      },
+      {
+        "schedule_type": "Everyman 4",
+        "duration": "170",
+        "classification": "Everyman schedule",
+        "specification": "1 min-length core (1 full cycle), 4 REM naps",
+        "mechanism": "1 core sleep before midnight to gain as much SWS as possible, 4 naps should theoretically only contain REM. However, the last nap may contain purely or mostly SWS. ",
+        "adaptation_difficulty": "Extreme",
+        "ideal_scheduling": "Core before midnight, 2 naps before the day starts, noon nap, afternoon nap",
+        "link": "https://www.polyphasic.net/schedules/everyman-4"
+      },
+      {
+        "schedule_type": "Everyman 5",
+        "duration": "190",
+        "classification": "Everyman schedule",
+        "specification": "1 min-length core (1 full cycle), 5 REM naps",
+        "mechanism": "1 core sleep before midnight to gain as much SWS as possible. 5 naps should theoretically only contain REM. However, the last nap may contain purely or mostly SWS. ",
+        "adaptation_difficulty": "Extreme",
+        "ideal_scheduling": "Core before midnight, naps placed in an Uberman timing fashion.",
+        "link": "https://www.polyphasic.net/schedules/everyman-5"
+      },
+      {
+        "schedule_type": "Sleep Everyman As Much As You Like",
+        "duration": "300,360",
+        "classification": "Flexible schedule, SPAMAYL variant, Everyman variant",
+        "specification": "1 core, multiple short naps",
+        "mechanism": "Variant of SPAMAYL that includes a core sleep. Evolves well from adaptation to E3-extended, then E3-extended-flex as a helpful intermediate. The core sleep provides SWS and some REM, with several naps providing the remaining REM. A strong reliance on sensing when to best nap to get quality REM naps is necessary. You will need the freedom to take a nap soon at any time, and/or the ability to plan naps sensibly for each day to avoid excessive tiredness from long wake gaps.",
+        "adaptation_difficulty": "Hard",
+        "ideal_scheduling": "Around a 4-5 hour core, with about 2-6 naps of 10-20 minutes in length. Favor natural wakes. Cycles may naturally compress to 80m with frequent sleeps. Plan for 90m cycles until there are many early natural wakes. Nap spacing should take into account natural periods of tiredness, as well as the morning circadian peak. In the evening, 6-7 hour gaps are common; however, alertness may wane after 3-4 hours awake in the morning. A longer Pronap of up to 45m might be plausible during REM peak (6-9am) if the core already covers all SWS requirements; this should be the case if the base strict schedule has already been adapted to. This would allow larger gaps and/or increased flexibility later in the day. The core might be flexed and/or varied max. 90m in length, as optional variables after adapting to a base schedule. It is not advisable to add an extra cycle more than once a week; more frequent lengthening seems to destabilize adaptations to the reduced sleep total.",
+        "link": "https://www.polyphasic.net/schedules/sevamayl"
+      },
+      {
+        "schedule_type": "Trimaxion",
+        "duration": "180",
+        "classification": "Dymaxion transitional schedule in an Everyman style",
+        "specification": "1 core sleep of 1 full cycle, 3 Dymaxion naps",
+        "mechanism": "4 sleeps per day. The core sleep is before midnight for most SWS; naps contain REM/mixed sleep stages. Circadian spots include: Core sleep around dusk, dawn nap, noon nap, and evening nap. There are mixed sleep stages in all 3 naps, possibly pure-REM or even pure-SWS nap. Trimaxion is more flexible than Dymaxion because of the core sleep; thus, after adaptation 3 naps can be slightly flexible.",
+        "adaptation_difficulty": "Extreme",
+        "ideal_scheduling": "Distribution of sleep resembles Dymaxion. Otherwise, it is a transition step to Dymaxion and also as a fallback from Dymaxion should adaptation fail.",
+        "link": "https://www.polyphasic.net/schedules/trimaxion"
+      }
+    ]
+  },
+  {
+    "schedule_name": "dual core",
+    "link": "https://www.polyphasic.net/everyman-6/",
+    "types": [
+      {
+        "schedule_type": "Dual Core 1",
+        "duration": "320",
+        "classification": "Dual Core schedule",
+        "specification": "2 core sleeps, 1 nap",
+        "mechanism": "One core sleep around dusk, one core sleep around dawn and one nap around noon. Sleep stage division: First core with mostly SWS and second core mostly REM.",
+        "adaptation_difficulty": "Moderate",
+        "ideal_scheduling": "Dusk core around 21:00 to 22:00, dawn core is free to place till 07:00 or 08:00, REM nap around early afternoon.",
+        "link": "https://www.polyphasic.net/schedules/dual-core-1"
+      },
+      {
+        "schedule_type": "Dual Core 2",
+        "duration": "310",
+        "classification": "Dual Core schedule",
+        "specification": "2 core sleeps, 2 naps",
+        "mechanism": "One core sleep around dusk, one core sleep around dawn, one nap around noon and one nap in the afternoon. Sleep stage division: First core SWS, second core REM.",
+        "adaptation_difficulty": "Somewhat hard",
+        "ideal_scheduling": "First core around 22:00, second core around 05:40, noon nap and afternoon nap.",
+        "link": "https://www.polyphasic.net/schedules/dual-core-2"
+      },
+      {
+        "schedule_type": "Dual Core 3",
+        "duration": "240",
+        "classification": "Dual Core schedule",
+        "specification": "2 core sleeps, 3 naps",
+        "mechanism": "One core sleep before midnight, one after midnight, dawn nap, noon nap, and afternoon nap. Sleep stage division: First core SWS, second core mixed, naps REM.",
+        "adaptation_difficulty": "Very Hard",
+        "ideal_scheduling": "3-hour wake between 2 cores, dawn nap, noon nap and afternoon nap.",
+        "link": "https://www.polyphasic.net/schedules/dual-core-3"
+      },
+      {
+        "schedule_type": "Dual Core 4",
+        "duration": "260",
+        "classification": "Uberman transitional schedule in a Dual Core style",
+        "specification": "2 core sleeps, 4 naps",
+        "mechanism": "Transitional variant of DC3 with 4 naps that follows Uberman rhythm. One core sleep before midnight, one after midnight, dawn nap, mid-morning nap, mid-afternoon nap, and evening nap. Sleep stage division: First core SWS, second core mixed, naps REM.",
+        "adaptation_difficulty": "Very Hard",
+        "ideal_scheduling": "Sleeps are scheduled to start every 4 hours which resembles Uberman. Transition step to E5 or Uberman and also useful as a fallback from E5 or Uberman should adaptation fail. Generally inferior to DC3 unless keeping Uberman rhythm is useful (the extra nap leads to slower sleep onset). Cycle length on this schedule is likely to hit around 65m, so the second core might shorten to increase REM quantity in naps (although this is untested).",
+        "link": "https://www.polyphasic.net/schedules/dual-core-4"
+      },
+      {
+        "schedule_type": "Everyman 5",
+        "duration": "190",
+        "classification": "Everyman schedule",
+        "specification": "1 min-length core (1 full cycle), 5 REM naps",
+        "mechanism": "1 core sleep before midnight to gain as much SWS as possible. 5 naps should theoretically only contain REM. However, the last nap may contain purely or mostly SWS. ",
+        "adaptation_difficulty": "Extreme",
+        "ideal_scheduling": "Core before midnight, naps placed in an Uberman timing fashion.",
+        "link": "https://www.polyphasic.net/schedules/everyman-5"
+      },
+      {
+        "schedule_type": "Dual Core As Much As You Like",
+        "duration": "330,390",
+        "classification": " Flexible schedule, SPAMAYL variant, Dual Core variant",
+        "specification": "2 cores, multiple short naps",
+        "mechanism": "Variant of SPAMAYL that includes 2 core sleeps. Evolves well from adaptation to DC1-extended, DC2-(extended) and DC3-extended. Then, adapt to flexible versions of these schedules as helpful intermediates. The first core sleep provides more SWS while the second core favors more REM. The nap(s) provide the remaining REM. The schedule relies on sensing tiredness patterns to get quality REM nap(s) and quality cores. You will need the freedom to take a nap soon at any time, and/or the ability to plan naps sensibly for each day. Ultimately, there should be no wake period too long that makes you tired.",
+        "adaptation_difficulty": "Hard",
+        "ideal_scheduling": "~At least ~4.5-5h total sleep for both cores combined, with about 1-4 naps of 10-20 minutes in length. Nap spacing should take into account natural periods of tiredness, as well as the morning circadian peak. In the evening, 6-7 hour wake gaps are common, whereas alertness may wane after 3-4 hours awake around night/early morning hours. A longer Pronap of up to 45m might be plausible during early morning hours (6-10am) if all SWS has sufficed; this should be if one has adapted to the base strict schedule. The longer nap would allow longer wake periods and/or increased flexibility later in the day. The wake gap between 2 cores can increase or decrease depending on days. Each core might be flexible and/or varied max. 90m in length. It can be detrimental to add an extra cycle to a core more than once a week; this can destabilize adaptations to the reduced sleep total.",
+        "link": "https://www.polyphasic.net/schedules/ducamayl"
+      },
+      {
+        "schedule_type": "Bimaxion",
+        "duration": "240",
+        "classification": "Dymaxion transitional schedule in a Dual Core style",
+        "specification": "2 core sleeps of minimum length, 2 naps",
+        "mechanism": "One core sleep before midnight, one around dawn, Dymaxion noon nap, and Dymaxion afternoon nap. Sleep stage division: Dusk core SWS, dawn core REM. Late nap can contain mixed sleep stages. More flexible than Dymaxion because there are 2 core sleeps to gain SWS and so 2 naps can be moved around to some extent.",
+        "adaptation_difficulty": "Very Hard",
+        "ideal_scheduling": "The whole schedule’s sleep distribution looks like Dymaxion, with one core before midnight, one core around dawn, one noon nap, one afternoon/evening nap.",
+        "link": "https://www.polyphasic.net/schedules/bimaxion"
+      }
+    ]
+  }
+]

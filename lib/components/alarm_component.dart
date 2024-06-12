@@ -23,7 +23,7 @@ class AlarmComponent extends StatelessWidget {
               child: Text(
                 "Alarm",
                 style: TextStyle(
-                    color: Theme.of(context).colorScheme.inverseSurface,
+                    color: Theme.of(context).colorScheme.inversePrimary,
                     fontSize: 22,
                     fontWeight: FontWeight.bold),
               ),
