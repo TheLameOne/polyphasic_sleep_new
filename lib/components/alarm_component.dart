@@ -13,7 +13,7 @@ class AlarmComponent extends StatelessWidget {
         onTap: () => Navigator.pushNamed(context, '/alarmpage'),
         child: Container(
           decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.surface,
+              color: Theme.of(context).colorScheme.secondary,
               borderRadius: BorderRadius.circular(15)),
           height: size.height * 0.1,
           width: (size.width - 48) / 2,
@@ -23,7 +23,7 @@ class AlarmComponent extends StatelessWidget {
               child: Text(
                 "Alarm",
                 style: TextStyle(
-                    color: Theme.of(context).colorScheme.inversePrimary,
+                    color: Theme.of(context).colorScheme.inverseSurface,
                     fontSize: 22,
                     fontWeight: FontWeight.bold),
               ),

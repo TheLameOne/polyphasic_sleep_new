@@ -15,7 +15,7 @@ class ScheduleComponent extends StatelessWidget {
         onTap: () => Navigator.pushNamed(context, '/schedulepage'),
         child: Container(
             decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.surface,
+                color: Theme.of(context).colorScheme.secondary,
                 borderRadius: BorderRadius.circular(15)),
             // height: size.height * 0.1,
             // width: (size.width - 16),

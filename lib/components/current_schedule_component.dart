@@ -9,7 +9,7 @@ class CurrentScheduleComponent extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return Container(
       decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surface,
+          color: Theme.of(context).colorScheme.secondary,
           borderRadius: BorderRadius.circular(15)),
       height: size.height * 0.2,
       width: size.width - 16,
@@ -55,7 +55,9 @@ class CurrentScheduleComponent extends StatelessWidget {
               ),
             ),
             Container(
-              child: SvgPicture.asset("assets/svg/moon.svg"),
+              child: SvgPicture.asset(
+                "assets/svg/moon.svg",
+              ),
               height: size.height * 0.4,
               width: size.width * 0.4,
               // PieChart(PieChartData(

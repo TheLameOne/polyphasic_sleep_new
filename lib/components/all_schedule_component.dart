@@ -13,7 +13,7 @@ class AllScheduleComponent extends StatelessWidget {
         onTap: () => Navigator.pushNamed(context, '/allschedulespage'),
         child: Container(
           decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.surface,
+              color: Theme.of(context).colorScheme.secondary,
               borderRadius: BorderRadius.circular(15)),
           height: size.height * 0.1,
           width: (size.width - 48) / 2,
