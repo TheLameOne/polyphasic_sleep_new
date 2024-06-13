@@ -30,6 +30,7 @@ environment:
 dependencies:
   action_slider: ^0.7.0
   alarm: ^3.1.4
+  chat_bubbles: ^1.6.0
   cupertino_icons: ^1.0.6
   fl_chart: ^0.68.0
   flutter:
@@ -74,6 +75,7 @@ flutter:
     - assets/svg/
     - assets/alarm/
     - assets/images/logo.png
+    - json/questions.json
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
