@@ -25,7 +25,9 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text(
           "Polyphasic Sleep",
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Theme.of(context).colorScheme.inversePrimary),
         ),
       ),
       body: Padding(

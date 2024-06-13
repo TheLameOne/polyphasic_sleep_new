@@ -9,6 +9,11 @@ class CurrentSchedulePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Current Schedule"),
       ),
+      body: Center(
+        child: MaterialButton(
+            child: Text("Setup"),
+            onPressed: () => Navigator.pushNamed(context, '/setuppage')),
+      ),
     );
   }
 }
