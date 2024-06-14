@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:polyphasic_sleep_new/models/sound_provider.dart';
 import 'package:polyphasic_sleep_new/pages/alarm_page.dart';
 import 'package:polyphasic_sleep_new/pages/all_schedules_page.dart';
 import 'package:polyphasic_sleep_new/pages/current_schedule_page.dart';
@@ -7,6 +8,7 @@ import 'package:polyphasic_sleep_new/pages/how_it_works_page.dart';
 import 'package:polyphasic_sleep_new/pages/settings_page.dart';
 import 'package:polyphasic_sleep_new/pages/setup_page.dart';
 import 'package:polyphasic_sleep_new/pages/sleep_quality_page.dart';
+import 'package:polyphasic_sleep_new/pages/sound_playback_page.dart';
 import 'package:polyphasic_sleep_new/pages/sounds_page.dart';
 import 'package:polyphasic_sleep_new/pages/splash_screen/logo_page.dart';
 import 'package:polyphasic_sleep_new/pages/splash_screen/quote_page.dart';
@@ -16,10 +18,15 @@ import 'package:polyphasic_sleep_new/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(ChangeNotifierProvider(
-    create: (context) => ThemeProvider(),
-    child: const MyApp(),
-  ));
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => ThemeProvider()),
+        ChangeNotifierProvider(create: (context) => SoundProvider()),
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -43,7 +50,8 @@ class MyApp extends StatelessWidget {
         '/settingspage': (context) => SettingsPage(),
         '/logopage': (context) => LogoPage(),
         '/quotepage': (context) => QuotePage(),
-        '/setuppage': (context) => SetupPage()
+        '/setuppage': (context) => SetupPage(),
+        '/soundplaybackpage': (context) => SoundPlaybackPage()
       },
     );
   }
