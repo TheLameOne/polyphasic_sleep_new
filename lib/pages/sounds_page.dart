@@ -22,8 +22,8 @@ class _SoundsPageState extends State<SoundsPage> {
   void goToSound(int soundIndex) {
     songlistProvider.currentSoundIndex = soundIndex;
 
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => SoundPlaybackPage()));
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => const SoundPlaybackPage()));
   }
 
   @override

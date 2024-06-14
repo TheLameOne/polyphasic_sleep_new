@@ -7,7 +7,7 @@ class AlarmPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Alarm"),
+        title: const Text("Alarm"),
       ),
     );
   }

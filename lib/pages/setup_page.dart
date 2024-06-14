@@ -12,7 +12,7 @@ class SetupPage extends StatefulWidget {
 }
 
 class _SetupPageState extends State<SetupPage> {
-  final _controller = ActionSliderController();
+  // final _controller = ActionSliderController();
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class _SetupPageState extends State<SetupPage> {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Container(
+            SizedBox(
               height: size.height * 0.7,
               width: size.width - 4,
               child: Padding(
@@ -50,8 +50,8 @@ class _SetupPageState extends State<SetupPage> {
                           PieChartSectionData(
                               value: 100 / 24,
                               color: Colors.black54,
-                              title: i.toString() + ":00",
-                              titleStyle: TextStyle(fontSize: 12),
+                              title: "$i:00",
+                              titleStyle: const TextStyle(fontSize: 12),
                               radius: 2,
                               titlePositionPercentageOffset: 10),
                       ]))

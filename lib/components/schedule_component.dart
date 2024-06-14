@@ -22,7 +22,7 @@ class ScheduleComponent extends StatelessWidget {
             child: Card(
               color: Theme.of(context).colorScheme.surface,
               elevation: 0,
-              child: Container(
+              child: SizedBox(
                 height: size.height * 0.2,
                 width: size.width,
                 // decoration: BoxDecoration(
@@ -54,11 +54,11 @@ class ScheduleComponent extends StatelessWidget {
                         ],
                       ),
                       Container(
-                        child: SvgPicture.asset("assets/svg/moon.svg",
-                            semanticsLabel: 'Acme Logo'),
                         color: Theme.of(context).colorScheme.surface,
                         height: size.height * 0.4,
                         width: size.width * 0.4,
+                        child: SvgPicture.asset("assets/svg/moon.svg",
+                            semanticsLabel: 'Acme Logo'),
                         // PieChart(PieChartData(
                         //     centerSpaceRadius: 40,
                         //     startDegreeOffset: 263,

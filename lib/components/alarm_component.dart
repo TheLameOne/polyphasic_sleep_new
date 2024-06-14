@@ -30,7 +30,7 @@ class AlarmComponent extends StatelessWidget {
                         fontSize: 22,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   Icon(
                     Icons.alarm,
                     size: 64,

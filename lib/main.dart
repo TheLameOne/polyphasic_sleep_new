@@ -12,8 +12,6 @@ import 'package:polyphasic_sleep_new/pages/sound_playback_page.dart';
 import 'package:polyphasic_sleep_new/pages/sounds_page.dart';
 import 'package:polyphasic_sleep_new/pages/splash_screen/logo_page.dart';
 import 'package:polyphasic_sleep_new/pages/splash_screen/quote_page.dart';
-import 'package:polyphasic_sleep_new/theme/dark_mode.dart';
-import 'package:polyphasic_sleep_new/theme/light_mode.dart';
 import 'package:polyphasic_sleep_new/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -40,18 +38,18 @@ class MyApp extends StatelessWidget {
       home: const QuotePage(),
       theme: Provider.of<ThemeProvider>(context).themeData,
       routes: {
-        '/homepage': (context) => HomePage(),
-        '/currentschedulepage': (context) => CurrentSchedulePage(),
-        '/allschedulespage': (context) => AllSchedulesPage(),
-        '/alarmpage': (context) => AlarmPage(),
-        '/howitworkspage': (context) => HowItWorksPage(),
-        '/soundspage': (context) => SoundsPage(),
-        '/sleepqualitypage': (context) => SleepQualityPage(),
-        '/settingspage': (context) => SettingsPage(),
-        '/logopage': (context) => LogoPage(),
-        '/quotepage': (context) => QuotePage(),
-        '/setuppage': (context) => SetupPage(),
-        '/soundplaybackpage': (context) => SoundPlaybackPage()
+        '/homepage': (context) => const HomePage(),
+        '/currentschedulepage': (context) => const CurrentSchedulePage(),
+        '/allschedulespage': (context) => const AllSchedulesPage(),
+        '/alarmpage': (context) => const AlarmPage(),
+        '/howitworkspage': (context) => const HowItWorksPage(),
+        '/soundspage': (context) => const SoundsPage(),
+        '/sleepqualitypage': (context) => const SleepQualityPage(),
+        '/settingspage': (context) => const SettingsPage(),
+        '/logopage': (context) => const LogoPage(),
+        '/quotepage': (context) => const QuotePage(),
+        '/setuppage': (context) => const SetupPage(),
+        '/soundplaybackpage': (context) => const SoundPlaybackPage()
       },
     );
   }

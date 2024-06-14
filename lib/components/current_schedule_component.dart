@@ -54,12 +54,12 @@ class CurrentScheduleComponent extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
+            SizedBox(
+              height: size.height * 0.4,
+              width: size.width * 0.4,
               child: SvgPicture.asset(
                 "assets/svg/moon.svg",
               ),
-              height: size.height * 0.4,
-              width: size.width * 0.4,
               // PieChart(PieChartData(
               //     centerSpaceRadius: 40,
               //     startDegreeOffset: 263,

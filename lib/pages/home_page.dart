@@ -1,7 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:polyphasic_sleep_new/components/alarm_component.dart';
 import 'package:polyphasic_sleep_new/components/all_schedule_component.dart';
 import 'package:polyphasic_sleep_new/components/current_schedule_component.dart';
@@ -30,8 +27,8 @@ class _HomePageState extends State<HomePage> {
               color: Theme.of(context).colorScheme.inversePrimary),
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
+      body: const Padding(
+        padding: EdgeInsets.all(8.0),
         child: Column(
           children: [
             CurrentScheduleComponent(),

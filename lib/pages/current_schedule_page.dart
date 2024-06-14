@@ -7,11 +7,11 @@ class CurrentSchedulePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Current Schedule"),
+        title: const Text("Current Schedule"),
       ),
       body: Center(
         child: MaterialButton(
-            child: Text("Setup"),
+            child: const Text("Setup"),
             onPressed: () => Navigator.pushNamed(context, '/setuppage')),
       ),
     );

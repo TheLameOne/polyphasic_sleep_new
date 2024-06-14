@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:polyphasic_sleep_new/components/neu_box.dart';
 import 'package:polyphasic_sleep_new/models/sound_provider.dart';
-import 'package:polyphasic_sleep_new/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 
 class SoundPlaybackPage extends StatelessWidget {
@@ -65,7 +63,7 @@ class SoundPlaybackPage extends StatelessWidget {
                             children: [
                               Text(
                                 currentSound.songName,
-                                style: TextStyle(
+                                style: const TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 20),
                               ),
                               Text(currentSound.artistName),
@@ -77,7 +75,7 @@ class SoundPlaybackPage extends StatelessWidget {
                     // heart icon
                   ],
                 )),
-                SizedBox(height: 25),
+                const SizedBox(height: 25),
                 // song duration progress
                 Column(
                   children: [
@@ -89,9 +87,9 @@ class SoundPlaybackPage extends StatelessWidget {
                           // start time
                           Text(formatTime(value.currentDuration)),
                           // shuffle icon
-                          Icon(Icons.shuffle),
+                          const Icon(Icons.shuffle),
                           // repeat icon
-                          Icon(Icons.repeat),
+                          const Icon(Icons.repeat),
                           // end time
                           Text(formatTime(value.totalduration)),
                         ],
@@ -117,7 +115,7 @@ class SoundPlaybackPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 25),
+                const SizedBox(height: 25),
                 // playback controls
                 Row(
                   children: [
@@ -125,12 +123,12 @@ class SoundPlaybackPage extends StatelessWidget {
                     Expanded(
                       child: GestureDetector(
                         onTap: value.playPreviousSong,
-                        child: NeuBox(
+                        child: const NeuBox(
                           child: Icon(Icons.skip_previous),
                         ),
                       ),
                     ),
-                    SizedBox(width: 25),
+                    const SizedBox(width: 25),
                     // play pause
                     Expanded(
                       flex: 2,
@@ -142,12 +140,12 @@ class SoundPlaybackPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(width: 25),
+                    const SizedBox(width: 25),
                     // skip forward
                     Expanded(
                       child: GestureDetector(
                         onTap: value.playNextSong,
-                        child: NeuBox(
+                        child: const NeuBox(
                           child: Icon(Icons.skip_next),
                         ),
                       ),

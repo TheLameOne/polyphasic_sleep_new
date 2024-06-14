@@ -8,11 +8,11 @@ class AllSchedulesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("All Schedules"),
+        title: const Text("All Schedules"),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(top: 8),
+          padding: EdgeInsets.only(top: 8),
           child: Column(
             children: [ScheduleComponent(), ScheduleComponent()],
           ),

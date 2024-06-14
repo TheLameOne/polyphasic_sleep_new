@@ -30,7 +30,7 @@ class SleepQualityComponent extends StatelessWidget {
                         fontSize: 22,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   Icon(Icons.circle_outlined,
                       size: 64,
                       color: Theme.of(context).colorScheme.inversePrimary)

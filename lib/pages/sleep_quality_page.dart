@@ -7,7 +7,7 @@ class SleepQualityPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Sleep Quality"),
+        title: const Text("Sleep Quality"),
       ),
     );
   }
