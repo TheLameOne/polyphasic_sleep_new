@@ -20,6 +20,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: AppBar(
+          // elevation: 20,
           title: Center(
         child: Text("P O L Y P H A S I C      S L E E P",
             style: TextStyle(
@@ -33,7 +34,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             CurrentScheduleComponent(),
-            SizedBox(height: 8),
+            SizedBox(height: 16),
             Row(
               children: [
                 Column(

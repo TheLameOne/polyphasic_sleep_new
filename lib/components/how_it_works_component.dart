@@ -8,7 +8,7 @@ class HowItWorksComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Padding(
-      padding: const EdgeInsets.only(bottom: 8.0),
+      padding: const EdgeInsets.only(bottom: 16.0),
       child: InkWell(
         borderRadius: BorderRadius.circular(15),
         onTap: () => Navigator.pushNamed(context, '/howitworkspage'),

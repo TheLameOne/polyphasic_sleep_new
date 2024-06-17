@@ -17,42 +17,34 @@ class CurrentScheduleComponent extends StatelessWidget {
         height: size.height * 0.2,
         width: size.width - 16,
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: EdgeInsets.all(16.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(8.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Everyman 1",
+                      "E V E R Y M A N 1",
                       style: TextStyle(
                           color: Theme.of(context).colorScheme.inversePrimary,
-                          fontSize: 32,
+                          fontSize: 22,
                           fontWeight: FontWeight.bold),
                     ),
-                    InkWell(
-                      onTap: () =>
-                          Navigator.pushNamed(context, '/currentschedulepage'),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: Theme.of(context).colorScheme.inversePrimary,
-                            borderRadius: BorderRadius.circular(30)),
-                        child: Padding(
-                          padding: const EdgeInsets.only(
-                              left: 20, right: 20, top: 8, bottom: 8),
-                          child: Text(
-                            "Setup",
-                            style: TextStyle(
-                                color: Theme.of(context).colorScheme.surface,
-                                fontSize: 22,
-                                fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                      ),
+                    Container(
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.inversePrimary,
+                          shape: BoxShape.circle),
+                      child: IconButton(
+                          onPressed: () => Navigator.pushNamed(
+                              context, '/currentschedulepage'),
+                          icon: Icon(
+                            Icons.settings,
+                            color: Theme.of(context).colorScheme.surface,
+                          )),
                     )
                   ],
                 ),

@@ -25,75 +25,77 @@ class _SetupPageState extends State<SetupPage> {
       (s: 1080, e: 1100),
       (s: 1320, e: 1410),
     ];
-    return SafeArea(
-      child: Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            SizedBox(
-              height: size.height * 0.7,
-              width: size.width - 4,
-              child: Padding(
-                padding: const EdgeInsets.all(48.0),
-                child: Center(
-                  child: Stack(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: PieChart(PieChartData(
-                            startDegreeOffset: 263,
-                            sectionsSpace: 0,
-                            sections: _list(value))),
-                      ),
-                      PieChart(PieChartData(startDegreeOffset: 263, sections: [
-                        for (int i = 0; i < 24; i++)
-                          PieChartSectionData(
-                              value: 100 / 24,
-                              color: Colors.black54,
-                              title: "$i:00",
-                              titleStyle: const TextStyle(fontSize: 12),
-                              radius: 2,
-                              titlePositionPercentageOffset: 10),
-                      ]))
-                    ],
-                  ),
+    return Scaffold(
+      appBar: AppBar(
+        actions: [],
+      ),
+      backgroundColor: Theme.of(context).colorScheme.surface,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          SizedBox(
+            height: size.height * 0.7,
+            width: size.width - 4,
+            child: Padding(
+              padding: const EdgeInsets.all(48.0),
+              child: Center(
+                child: Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: PieChart(PieChartData(
+                          startDegreeOffset: 263,
+                          sectionsSpace: 0,
+                          sections: _list(value))),
+                    ),
+                    PieChart(PieChartData(startDegreeOffset: 263, sections: [
+                      for (int i = 0; i < 24; i++)
+                        PieChartSectionData(
+                            value: 100 / 24,
+                            color: Colors.black54,
+                            title: "$i:00",
+                            titleStyle: const TextStyle(fontSize: 12),
+                            radius: 2,
+                            titlePositionPercentageOffset: 10),
+                    ]))
+                  ],
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: ActionSlider.standard(
-                width: 300.0,
-                action: (controller) async {
-                  controller.loading(); //starts loading animation
-                  await Future.delayed(const Duration(seconds: 1));
-                  _stopAlarm();
-                  controller.success(); //starts success animation
-                  await Future.delayed(const Duration(seconds: 1));
-                  controller.reset(); //resets the slider
-                },
-                direction: TextDirection.ltr,
-                child: const Text('Stop Alarm #debug'),
-              ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ActionSlider.standard(
+              width: 300.0,
+              action: (controller) async {
+                controller.loading(); //starts loading animation
+                await Future.delayed(const Duration(seconds: 1));
+                _stopAlarm();
+                controller.success(); //starts success animation
+                await Future.delayed(const Duration(seconds: 1));
+                controller.reset(); //resets the slider
+              },
+              direction: TextDirection.ltr,
+              child: const Text('Stop Alarm #debug'),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: ActionSlider.standard(
-                width: 300.0,
-                action: (controller) async {
-                  controller.loading(); //starts loading animation
-                  await Future.delayed(const Duration(seconds: 1));
-                  _setupAlarm();
-                  controller.success(); //starts success animation
-                  await Future.delayed(const Duration(seconds: 1));
-                  controller.reset(); //resets the slider
-                },
-                direction: TextDirection.ltr,
-                child: const Text('Setup Sleep Cycle'),
-              ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ActionSlider.standard(
+              width: 300.0,
+              action: (controller) async {
+                controller.loading(); //starts loading animation
+                await Future.delayed(const Duration(seconds: 1));
+                _setupAlarm();
+                controller.success(); //starts success animation
+                await Future.delayed(const Duration(seconds: 1));
+                controller.reset(); //resets the slider
+              },
+              direction: TextDirection.ltr,
+              child: const Text('Setup Sleep Cycle'),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
