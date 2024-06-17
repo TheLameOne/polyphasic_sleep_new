@@ -25,7 +25,7 @@ class NeuBox extends StatelessWidget {
                 blurRadius: 15,
                 offset: const Offset(-4, -4)),
           ]),
-      padding: (padding) ? EdgeInsets.all(12) : EdgeInsets.all(0),
+      padding: (padding) ? const EdgeInsets.all(12) : const EdgeInsets.all(0),
       child: child,
     );
   }

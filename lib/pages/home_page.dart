@@ -24,7 +24,8 @@ class _HomePageState extends State<HomePage> {
         child: Text("P O L Y P H A S I C      S L E E P",
             style: TextStyle(
                 color: Theme.of(context).colorScheme.inverseSurface,
-                fontSize: 20)),
+                fontWeight: FontWeight.bold,
+                fontSize: 22)),
       )),
       // backgroundColor: Theme.of(context).colorScheme.surface,
       body: const Padding(
