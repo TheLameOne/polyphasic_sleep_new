@@ -123,7 +123,7 @@ class SoundPlaybackPage extends StatelessWidget {
                     Expanded(
                       child: GestureDetector(
                         onTap: value.playPreviousSong,
-                        child: const NeuBox(
+                        child: NeuBox(
                           child: Icon(Icons.skip_previous),
                         ),
                       ),
@@ -145,7 +145,7 @@ class SoundPlaybackPage extends StatelessWidget {
                     Expanded(
                       child: GestureDetector(
                         onTap: value.playNextSong,
-                        child: const NeuBox(
+                        child: NeuBox(
                           child: Icon(Icons.skip_next),
                         ),
                       ),

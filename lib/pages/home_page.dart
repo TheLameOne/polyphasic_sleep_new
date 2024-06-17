@@ -20,13 +20,13 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: AppBar(
-        title: Text(
-          "Polyphasic Sleep",
-          style: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: Theme.of(context).colorScheme.inversePrimary),
-        ),
-      ),
+          title: Center(
+        child: Text("P O L Y P H A S I C      S L E E P",
+            style: TextStyle(
+                color: Theme.of(context).colorScheme.inverseSurface,
+                fontSize: 20)),
+      )),
+      // backgroundColor: Theme.of(context).colorScheme.surface,
       body: const Padding(
         padding: EdgeInsets.all(8.0),
         child: Column(
@@ -47,6 +47,7 @@ class _HomePageState extends State<HomePage> {
                     SleepQualityComponent()
                   ],
                 ),
+                SizedBox(width: 8),
                 Column(
                   children: [
                     // Alarms

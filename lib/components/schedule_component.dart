@@ -8,8 +8,7 @@ class ScheduleComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Padding(
-      padding:
-          const EdgeInsets.only(top: 8.0, left: 8.0, right: 8.0, bottom: 8.0),
+      padding: const EdgeInsets.only(bottom: 8.0),
       child: InkWell(
         borderRadius: BorderRadius.circular(15),
         onTap: () => Navigator.pushNamed(context, '/schedulepage'),
@@ -18,7 +17,7 @@ class ScheduleComponent extends StatelessWidget {
                 color: Theme.of(context).colorScheme.secondary,
                 borderRadius: BorderRadius.circular(15)),
             // height: size.height * 0.1,
-            // width: (size.width - 16),
+            // width: (size.width - 24),
             child: Card(
               color: Theme.of(context).colorScheme.surface,
               elevation: 0,

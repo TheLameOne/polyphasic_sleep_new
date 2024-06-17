@@ -51,8 +51,16 @@ class _HowItWorksPageState extends State<HowItWorksPage> {
     // final size = MediaQuery.of(context).size;
     return Scaffold(
         appBar: AppBar(
-          title: const Text("How it Works"),
-        ),
+            title: Center(
+          child: Padding(
+            padding: const EdgeInsets.only(right: 40.0),
+            child: Text(" H O W    I T    W O R K S",
+                style: TextStyle(
+                    color: Theme.of(context).colorScheme.inverseSurface,
+                    fontSize: 20)),
+          ),
+        )),
+        backgroundColor: Theme.of(context).colorScheme.surface,
         body: Column(
           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

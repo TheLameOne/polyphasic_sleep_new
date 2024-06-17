@@ -4,10 +4,8 @@ import 'package:provider/provider.dart';
 
 class NeuBox extends StatelessWidget {
   final Widget? child;
-  const NeuBox({
-    super.key,
-    required this.child,
-  });
+  bool padding;
+  NeuBox({super.key, required this.child, this.padding = true});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +25,7 @@ class NeuBox extends StatelessWidget {
                 blurRadius: 15,
                 offset: const Offset(-4, -4)),
           ]),
-      padding: const EdgeInsets.all(12),
+      padding: (padding) ? EdgeInsets.all(12) : EdgeInsets.all(0),
       child: child,
     );
   }

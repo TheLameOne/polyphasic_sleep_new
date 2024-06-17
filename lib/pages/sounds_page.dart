@@ -21,7 +21,6 @@ class _SoundsPageState extends State<SoundsPage> {
 
   void goToSound(int soundIndex) {
     songlistProvider.currentSoundIndex = soundIndex;
-
     Navigator.push(context,
         MaterialPageRoute(builder: (context) => const SoundPlaybackPage()));
   }
@@ -30,11 +29,16 @@ class _SoundsPageState extends State<SoundsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "Song List Page",
-          style: TextStyle(color: Theme.of(context).colorScheme.inverseSurface),
+          title: Center(
+        child: Padding(
+          padding: const EdgeInsets.only(right: 40.0),
+          child: Text("P L A Y L I S T",
+              style: TextStyle(
+                  color: Theme.of(context).colorScheme.inverseSurface,
+                  fontSize: 20)),
         ),
-      ),
+      )),
+      backgroundColor: Theme.of(context).colorScheme.surface,
       body: Consumer<SoundProvider>(builder: (context, value, child) {
         final List<Sound> songlist = value.songlist;
         return ListView.builder(
