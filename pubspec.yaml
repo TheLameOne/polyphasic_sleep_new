@@ -36,9 +36,12 @@ dependencies:
   fl_chart: ^0.68.0
   flutter:
     sdk: flutter
+  flutter_heatmap_calendar: ^1.0.5
   flutter_launcher_icons: ^0.13.1
+  flutter_slidable: ^3.1.0
   flutter_svg: ^2.0.10+1
   google_fonts: ^6.2.1
+  hive_flutter: ^1.1.0
   provider: ^6.1.2
 
 dev_dependencies:
