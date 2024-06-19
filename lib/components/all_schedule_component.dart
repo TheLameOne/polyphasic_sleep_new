@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:polyphasic_sleep_new/components/neu_box.dart';
+import 'package:polyphasic_sleep_new/pages/all_schedules_page.dart';
+import 'package:polyphasic_sleep_new/pages/schedule_types_page.dart';
 
 class AllScheduleComponent extends StatelessWidget {
   const AllScheduleComponent({super.key});
@@ -11,7 +13,10 @@ class AllScheduleComponent extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 16.0),
       child: InkWell(
         borderRadius: BorderRadius.circular(15),
-        onTap: () => Navigator.pushNamed(context, '/allschedulespage'),
+        onTap: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => AllSchedulesPage()));
+        },
         child: NeuBox(
           padding: false,
           child: Container(

@@ -17,6 +17,15 @@ class AlarmPage extends StatelessWidget {
                   fontSize: 20)),
         ),
       )),
+      body: Center(
+        child: Text(
+          "Select schedule to edit Alarms",
+          style: TextStyle(
+              color: Theme.of(context).colorScheme.inverseSurface,
+              fontSize: 16,
+              fontWeight: FontWeight.w300),
+        ),
+      ),
     );
   }
 }

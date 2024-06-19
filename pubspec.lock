@@ -321,11 +321,35 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.68.0"
+  flineicons:
+    dependency: "direct main"
+    description:
+      name: flineicons
+      sha256: fb54d1560dc3ce22062885e68bffae375fede75885781b3815f4c77996fab157
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.1"
   flutter:
     dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_card_swiper:
+    dependency: "direct main"
+    description:
+      name: flutter_card_swiper
+      sha256: "880ad669017154d6d1f8c3abd861db08af97b3b7b0f7d7d5cbde690a9253811d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "7.0.1"
+  flutter_cards_reel:
+    dependency: "direct main"
+    description:
+      name: flutter_cards_reel
+      sha256: a77e6f4e4c154944cde080a8c84fff412978071daa20ac09d68ad3bbedbf8874
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.3"
   flutter_fgbg:
     dependency: transitive
     description:
@@ -408,6 +432,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.2.1"
+  google_nav_bar:
+    dependency: "direct main"
+    description:
+      name: google_nav_bar
+      sha256: "1c8e3882fa66ee7b74c24320668276ca23affbd58f0b14a24c1e5590f4d07ab0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.0.6"
   graphs:
     dependency: transitive
     description:
