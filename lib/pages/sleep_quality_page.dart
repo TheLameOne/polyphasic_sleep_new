@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 class SleepQualityPage extends StatelessWidget {
   const SleepQualityPage({super.key});
@@ -17,6 +18,33 @@ class SleepQualityPage extends StatelessWidget {
         ),
       )),
       backgroundColor: Theme.of(context).colorScheme.surface,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            IconButton(
+                onPressed: () async {
+                  var box = await Hive.openBox('test1');
+                  box.put('name', 'harsh');
+                },
+                icon: Icon(
+                  Icons.home,
+                  size: 64,
+                )),
+            IconButton(
+                onPressed: () async {
+                  var box = await Hive.openBox('test1');
+                  // box.put('name', 'harsh');
+                  print(box.get('name'));
+                  print(box.name);
+                },
+                icon: Icon(
+                  Icons.padding,
+                  size: 64,
+                )),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:polyphasic_sleep_new/models/schedules_model.dart';
 
 class ScheduleComponent extends StatelessWidget {
-  const ScheduleComponent({super.key});
+  final String name;
+  final List<ScheduleTypeModel> desc;
+
+  const ScheduleComponent({super.key, required this.name, required this.desc});
 
   @override
   Widget build(BuildContext context) {
@@ -36,20 +40,21 @@ class ScheduleComponent extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Biphasic",
+                            name,
                             style: TextStyle(
                                 color: Theme.of(context)
                                     .colorScheme
                                     .inversePrimary,
                                 fontSize: 32),
                           ),
-                          Text(
-                            "5-6.5 hrs of Sleep",
-                            style: TextStyle(
-                                color: Theme.of(context)
-                                    .colorScheme
-                                    .inversePrimary),
-                          )
+                          for (int i = 0; i < desc.length; i++)
+                            Text(
+                              desc[i].scheduleType!,
+                              style: TextStyle(
+                                  color: Theme.of(context)
+                                      .colorScheme
+                                      .inversePrimary),
+                            )
                         ],
                       ),
                       Container(

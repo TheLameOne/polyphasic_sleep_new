@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:chat_bubbles/bubbles/bubble_special_one.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:polyphasic_sleep_new/components/my_textfield.dart';
 import 'package:polyphasic_sleep_new/models/qna_model.dart';
 import 'package:flutter/services.dart' as rootbundle;
@@ -144,7 +145,11 @@ class _HowItWorksPageState extends State<HowItWorksPage> {
                 color: Color.fromARGB(220, 76, 175, 79),
                 shape: BoxShape.circle),
             child: IconButton(
-                onPressed: () {},
+                onPressed: () async {
+                  var box = await Hive.openBox('test');
+                  box.put('name', 'harsh');
+                  print(box.get('name'));
+                },
                 icon: Icon(
                   Icons.arrow_upward,
                   color: Theme.of(context).colorScheme.surface,

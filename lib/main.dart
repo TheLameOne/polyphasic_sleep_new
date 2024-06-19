@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:polyphasic_sleep_new/models/sound_provider.dart';
 import 'package:polyphasic_sleep_new/pages/alarm_page.dart';
 import 'package:polyphasic_sleep_new/pages/all_schedules_page.dart';
@@ -15,7 +17,10 @@ import 'package:polyphasic_sleep_new/pages/splash_screen/quote_page.dart';
 import 'package:polyphasic_sleep_new/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+void main() async {
+  // WidgetsFlutterBinding.ensureInitialized();
+  // var dir = await getApplicationDocumentsDirectory();
+  await Hive.initFlutter();
   runApp(
     MultiProvider(
       providers: [
