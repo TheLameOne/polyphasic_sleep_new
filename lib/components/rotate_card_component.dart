@@ -50,6 +50,7 @@ class _RotateCardState extends State<RotateCard> {
             child: ScheduleComponent(
               name: "BIPHASIC",
               desc: [],
+              svgPath: "assets/svg/biphasic.svg",
             ),
           ),
           // decoration: const BoxDecoration(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cards_reel/cards_reel_view.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:polyphasic_sleep_new/components/schedule_type_details.dart';
 
 class ScheduleTypesPage extends StatefulWidget {
   const ScheduleTypesPage({super.key});
@@ -20,11 +21,7 @@ class _ScheduleTypesPageState extends State<ScheduleTypesPage> {
             itemHeaderExtent: 100,
             itemCount: 5,
             children: [
-              Container(
-                height: size.height * 0.5,
-                width: size.width,
-                color: Colors.red,
-              ),
+              ScheduleTypeDetails(),
               Container(
                 height: size.height * 0.5,
                 width: size.width,

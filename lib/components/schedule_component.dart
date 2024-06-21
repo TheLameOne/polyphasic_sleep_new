@@ -6,8 +6,13 @@ import 'package:polyphasic_sleep_new/pages/schedule_types_page.dart';
 class ScheduleComponent extends StatelessWidget {
   final String name;
   final List<ScheduleTypeModel> desc;
+  final String svgPath;
 
-  const ScheduleComponent({super.key, required this.name, required this.desc});
+  const ScheduleComponent(
+      {super.key,
+      required this.name,
+      required this.desc,
+      required this.svgPath});
 
   @override
   Widget build(BuildContext context) {
@@ -62,8 +67,9 @@ class ScheduleComponent extends StatelessWidget {
                       color: Theme.of(context).colorScheme.surface,
                       height: size.height * 0.3,
                       width: size.width * 0.3,
-                      child: SvgPicture.asset("assets/svg/biphasic.svg",
-                          semanticsLabel: 'Acme Logo'),
+                      child: SvgPicture.asset(
+                        svgPath,
+                      ),
                       // PieChart(PieChartData(
                       //     centerSpaceRadius: 40,
                       //     startDegreeOffset: 263,

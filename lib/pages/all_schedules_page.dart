@@ -9,6 +9,8 @@ import 'package:polyphasic_sleep_new/components/rotate_card_component.dart';
 import 'package:polyphasic_sleep_new/components/schedule_component.dart';
 import 'package:polyphasic_sleep_new/models/schedules_model.dart';
 import 'package:polyphasic_sleep_new/pages/schedule_types_page.dart';
+import 'package:polyphasic_sleep_new/theme/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class AllSchedulesPage extends StatelessWidget {
   const AllSchedulesPage({super.key});
@@ -23,6 +25,10 @@ class AllSchedulesPage extends StatelessWidget {
             child: ScheduleComponent(
               name: "BIPHASIC",
               desc: [],
+              svgPath: (Provider.of<ThemeProvider>(context, listen: false)
+                      .isDarkMode)
+                  ? "assets/svg/dark/BiphasicSiesta.svg"
+                  : "assets/svg/light/BiphasicSiesta.svg",
             )),
         // color: Colors.blue,
       ),
@@ -31,8 +37,12 @@ class AllSchedulesPage extends StatelessWidget {
         child: NeuBox(
             padding: false,
             child: ScheduleComponent(
-              name: "BIPHASIC",
+              name: "EVERYMAN",
               desc: [],
+              svgPath: (Provider.of<ThemeProvider>(context, listen: false)
+                      .isDarkMode)
+                  ? "assets/svg/dark/Everyman.svg"
+                  : "assets/svg/light/Everyman.svg",
             )),
         // color: Colors.red,
       ),
@@ -41,8 +51,12 @@ class AllSchedulesPage extends StatelessWidget {
         child: NeuBox(
             padding: false,
             child: ScheduleComponent(
-              name: "BIPHASIC",
+              name: "DUAL CORE",
               desc: [],
+              svgPath: (Provider.of<ThemeProvider>(context, listen: false)
+                      .isDarkMode)
+                  ? "assets/svg/dark/Uberman.svg"
+                  : "assets/svg/light/Uberman.svg",
             )),
         // color: Colors.purple,
       )
