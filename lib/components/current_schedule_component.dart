@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 import 'package:polyphasic_sleep_new/components/neu_box.dart';
 import 'package:polyphasic_sleep_new/util/global.dart';
 
@@ -19,7 +18,7 @@ class CurrentScheduleComponent extends StatelessWidget {
         height: size.height * 0.2,
         width: size.width - 16,
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: (!scheduleSelected)
               ? Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -31,7 +30,7 @@ class CurrentScheduleComponent extends StatelessWidget {
                           fontSize: 22,
                           fontWeight: FontWeight.w500),
                     ),
-                    SizedBox(height: 8),
+                    const SizedBox(height: 8),
                     Text(
                       "S C H E D U L E",
                       style: TextStyle(
@@ -45,7 +44,7 @@ class CurrentScheduleComponent extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.start,

@@ -6,28 +6,26 @@ class BottomNavbarSchedule extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: GNav(
-          color: Colors.grey[400],
-          activeColor: Colors.grey.shade700,
-          tabActiveBorder: Border.all(color: Colors.white),
-          tabBackgroundColor: Colors.grey.shade100,
-          mainAxisAlignment: MainAxisAlignment.center,
-          tabBorderRadius: 16,
-          tabs: const [
-            GButton(
-              icon: Icons.abc,
-              text: "BIPHASIC",
-            ),
-            GButton(
-              icon: Icons.abc,
-              text: "BIPHASIC",
-            ),
-            GButton(
-              icon: Icons.abc,
-              text: "BIPHASIC",
-            ),
-          ]),
-    );
+    return GNav(
+        color: Colors.grey[400],
+        activeColor: Colors.grey.shade700,
+        tabActiveBorder: Border.all(color: Colors.white),
+        tabBackgroundColor: Colors.grey.shade100,
+        mainAxisAlignment: MainAxisAlignment.center,
+        tabBorderRadius: 16,
+        tabs: const [
+          GButton(
+            icon: Icons.abc,
+            text: "BIPHASIC",
+          ),
+          GButton(
+            icon: Icons.abc,
+            text: "BIPHASIC",
+          ),
+          GButton(
+            icon: Icons.abc,
+            text: "BIPHASIC",
+          ),
+        ]);
   }
 }

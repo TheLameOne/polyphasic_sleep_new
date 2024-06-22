@@ -2,13 +2,9 @@ import 'dart:convert';
 import 'package:flutter/services.dart' as rootbundle;
 import 'package:flutter/material.dart';
 import 'package:flutter_card_swiper/flutter_card_swiper.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:polyphasic_sleep_new/components/bottom_navbar_schedule.dart';
 import 'package:polyphasic_sleep_new/components/neu_box.dart';
-import 'package:polyphasic_sleep_new/components/rotate_card_component.dart';
 import 'package:polyphasic_sleep_new/components/schedule_component.dart';
 import 'package:polyphasic_sleep_new/models/schedules_model.dart';
-import 'package:polyphasic_sleep_new/pages/schedule_types_page.dart';
 import 'package:polyphasic_sleep_new/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -24,7 +20,10 @@ class AllSchedulesPage extends StatelessWidget {
             padding: false,
             child: ScheduleComponent(
               name: "BIPHASIC",
-              desc: [],
+              desc:
+                  "Two sleep periods per day, typically one long core sleep and a shorter nap.",
+              difficulty: "Moderate",
+              mechanism: "Optimizes SWS and REM sleep stages.",
               svgPath: (Provider.of<ThemeProvider>(context, listen: false)
                       .isDarkMode)
                   ? "assets/svg/dark/BiphasicSiesta.svg"
@@ -38,7 +37,9 @@ class AllSchedulesPage extends StatelessWidget {
             padding: false,
             child: ScheduleComponent(
               name: "EVERYMAN",
-              desc: [],
+              desc: "Short core sleep with multiple naps.",
+              difficulty: "Moderate to Extreme",
+              mechanism: "Core sleep at night, naps focus on REM sleep.",
               svgPath: (Provider.of<ThemeProvider>(context, listen: false)
                       .isDarkMode)
                   ? "assets/svg/dark/Everyman.svg"
@@ -52,7 +53,10 @@ class AllSchedulesPage extends StatelessWidget {
             padding: false,
             child: ScheduleComponent(
               name: "DUAL CORE",
-              desc: [],
+              desc: "Two core sleeps and one or more naps.",
+              difficulty: "Moderate to Very Hard",
+              mechanism:
+                  "Ensures adequate SWS and REM sleep with spaced core periods and naps.",
               svgPath: (Provider.of<ThemeProvider>(context, listen: false)
                       .isDarkMode)
                   ? "assets/svg/dark/Uberman.svg"

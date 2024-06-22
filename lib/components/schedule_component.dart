@@ -5,13 +5,17 @@ import 'package:polyphasic_sleep_new/pages/schedule_types_page.dart';
 
 class ScheduleComponent extends StatelessWidget {
   final String name;
-  final List<ScheduleTypeModel> desc;
+  final String desc;
+  final String difficulty;
+  final String mechanism;
   final String svgPath;
 
   const ScheduleComponent(
       {super.key,
       required this.name,
       required this.desc,
+      required this.difficulty,
+      required this.mechanism,
       required this.svgPath});
 
   @override
@@ -49,18 +53,22 @@ class ScheduleComponent extends StatelessWidget {
                         Text(
                           name,
                           style: TextStyle(
-                              color:
-                                  Theme.of(context).colorScheme.inversePrimary,
-                              fontSize: 32),
+                            color: Theme.of(context).colorScheme.inversePrimary,
+                            fontSize: 32,
+                          ),
                         ),
-                        for (int i = 0; i < desc.length; i++)
-                          Text(
-                            desc[i].scheduleType!,
+                        Container(
+                          width: size.width * 0.5,
+                          child: Text(
+                            desc,
                             style: TextStyle(
                                 color: Theme.of(context)
                                     .colorScheme
-                                    .inversePrimary),
-                          )
+                                    .inversePrimary,
+                                fontSize: 12,
+                                overflow: TextOverflow.clip),
+                          ),
+                        ),
                       ],
                     ),
                     Container(

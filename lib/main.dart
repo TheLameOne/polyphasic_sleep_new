@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:path_provider/path_provider.dart';
 import 'package:polyphasic_sleep_new/models/sound_provider.dart';
 import 'package:polyphasic_sleep_new/pages/alarm_page.dart';
 import 'package:polyphasic_sleep_new/pages/all_schedules_page.dart';

@@ -56,9 +56,9 @@ class ScheduleTypeDetails extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(width: 16),
+          const SizedBox(width: 16),
           // PNG
-          Container(
+          SizedBox(
             // color: Theme.of(context).colorScheme.surface,
             height: size.height * 0.3,
             width: size.width * 0.3,

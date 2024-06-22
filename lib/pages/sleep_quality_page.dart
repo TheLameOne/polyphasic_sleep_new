@@ -27,7 +27,7 @@ class SleepQualityPage extends StatelessWidget {
                   var box = await Hive.openBox('test1');
                   box.put('name', 'harsh');
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.home,
                   size: 64,
                 )),
@@ -38,7 +38,7 @@ class SleepQualityPage extends StatelessWidget {
                   print(box.get('name'));
                   print(box.name);
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.padding,
                   size: 64,
                 )),
