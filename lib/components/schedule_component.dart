@@ -7,16 +7,20 @@ class ScheduleComponent extends StatelessWidget {
   final String name;
   final String desc;
   final String difficulty;
-  final String mechanism;
+  final String totalSleep;
   final String svgPath;
+  final String link;
+  final List<int> contains;
 
   const ScheduleComponent(
       {super.key,
       required this.name,
       required this.desc,
       required this.difficulty,
-      required this.mechanism,
-      required this.svgPath});
+      required this.totalSleep,
+      required this.svgPath,
+      required this.link,
+      required this.contains});
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +28,10 @@ class ScheduleComponent extends StatelessWidget {
     return InkWell(
       borderRadius: BorderRadius.circular(15),
       onTap: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (context) => const ScheduleTypesPage()));
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => ScheduleTypesPage(contains: contains)));
       },
       child: Container(
           decoration: BoxDecoration(
@@ -69,6 +75,42 @@ class ScheduleComponent extends StatelessWidget {
                                 overflow: TextOverflow.clip),
                           ),
                         ),
+                        Row(
+                          children: [
+                            Text("Difficulty : ",
+                                style: TextStyle(
+                                    color: Theme.of(context)
+                                        .colorScheme
+                                        .inversePrimary,
+                                    fontSize: 14,
+                                    overflow: TextOverflow.clip)),
+                            Text(difficulty,
+                                style: TextStyle(
+                                    color: Theme.of(context)
+                                        .colorScheme
+                                        .inversePrimary,
+                                    fontSize: 14,
+                                    overflow: TextOverflow.clip)),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Text("Total Sleep : ",
+                                style: TextStyle(
+                                    color: Theme.of(context)
+                                        .colorScheme
+                                        .inversePrimary,
+                                    fontSize: 14,
+                                    overflow: TextOverflow.clip)),
+                            Text(totalSleep,
+                                style: TextStyle(
+                                    color: Theme.of(context)
+                                        .colorScheme
+                                        .inversePrimary,
+                                    fontSize: 14,
+                                    overflow: TextOverflow.clip)),
+                          ],
+                        )
                       ],
                     ),
                     Container(

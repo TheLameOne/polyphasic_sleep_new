@@ -4,6 +4,7 @@ class ClassificationModel {
   String? difficulty;
   String? totalSleep;
   String? link;
+  String? svgPath;
   List<int>? contains;
 
   ClassificationModel(
@@ -12,14 +13,16 @@ class ClassificationModel {
       this.difficulty,
       this.totalSleep,
       this.link,
-      this.contains});
+      this.contains,
+      this.svgPath});
 
   ClassificationModel.fromJson(Map<String, dynamic> json) {
     scheduleName = json['schedule_name'];
     shortDescription = json['short_description'];
-    difficulty = json['Difficulty'];
-    totalSleep = json['Total Sleep'];
+    difficulty = json['difficulty'];
+    totalSleep = json['total_sleep'];
     link = json['link'];
+    svgPath = json['svg_path'];
     contains = json['contains'].cast<int>();
   }
 
@@ -27,9 +30,10 @@ class ClassificationModel {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['schedule_name'] = this.scheduleName;
     data['short_description'] = this.shortDescription;
-    data['Difficulty'] = this.difficulty;
-    data['Total Sleep'] = this.totalSleep;
+    data['difficulty'] = this.difficulty;
+    data['total_sleep'] = this.totalSleep;
     data['link'] = this.link;
+    data['svg_path'] = this.svgPath;
     data['contains'] = this.contains;
     return data;
   }

@@ -2,15 +2,26 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class ScheduleTypeDetails extends StatelessWidget {
-  // String scheduleTypeName;
-  // String duration;
-  // String classification;
-  // double difficulty;
-  // String link;
-  // String idealScheduling;
-  // String svgPath;
+  String scheduleType;
+  String shortDescription;
+  String totalSleep;
+  String classification;
+  double difficulty;
+  String link;
+  String idealScheduling;
+  String svgPath;
 
-  const ScheduleTypeDetails({super.key});
+  ScheduleTypeDetails({
+    super.key,
+    required this.scheduleType,
+    required this.shortDescription,
+    required this.totalSleep,
+    required this.classification,
+    required this.difficulty,
+    required this.idealScheduling,
+    required this.link,
+    required this.svgPath,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +36,7 @@ class ScheduleTypeDetails extends StatelessWidget {
           Column(
             children: [
               Text(
-                "Siesta",
+                scheduleType,
                 style: TextStyle(
                     color: Theme.of(context).colorScheme.inversePrimary,
                     fontSize: 36),
